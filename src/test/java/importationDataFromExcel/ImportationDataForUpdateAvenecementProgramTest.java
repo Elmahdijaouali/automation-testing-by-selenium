@@ -24,7 +24,7 @@ public class ImportationDataForUpdateAvenecementProgramTest extends BaseTest {
         linkNavigateToPageGenerateEmplois.click();
 
 
-        var urlFileTest = "/home/enigma/projects/Timetable-Generator/datatest/AvancementProgramme_updated.xlsx";
+        var urlFileTest = getFilePathForTestFiles("AvancementProgramme_updated.xlsx");
         var fileInput =  driver.findElement(By.id("importData")) ;
 
         fileInput.sendKeys(urlFileTest) ;

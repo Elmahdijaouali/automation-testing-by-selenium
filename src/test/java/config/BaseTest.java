@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.nio.file.Paths;
 import java.time.Duration;
 
 public class BaseTest {
@@ -72,6 +74,14 @@ public class BaseTest {
         return  el ;
     }
 
+
+    protected  String getFilePathForTestFiles(String fileName) {
+        String projectDir = System.getProperty("user.dir");
+
+        String filePath = Paths.get(projectDir, "datatest", fileName ).toString();
+
+        return  filePath ;
+    }
 
     @AfterEach
     public void tearDown() {

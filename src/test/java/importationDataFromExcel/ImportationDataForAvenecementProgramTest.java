@@ -24,7 +24,7 @@ public class ImportationDataForAvenecementProgramTest  extends BaseTest {
 
         linkNavigateToPageGenerateEmplois.click();
 
-        var urlFileTest = "/home/enigma/projects/Timetable-Generator/datatest/AvancementProgramme.xlsx";
+        var urlFileTest = getFilePathForTestFiles("AvancementProgramme.xlsx");
         var fileInput =  driver.findElement(By.id("importData")) ;
 
         fileInput.sendKeys(urlFileTest) ;
@@ -49,7 +49,7 @@ public class ImportationDataForAvenecementProgramTest  extends BaseTest {
 
         linkNavigateToPageGenerateEmplois.click();
 
-        var urlFileTest = "/home/enigma/projects/Timetable-Generator/datatest/formateurs_avec_des_salle.xlsx";
+        var urlFileTest = getFilePathForTestFiles("formateurs_avec_des_salle.xlsx");
         var fileInput =  driver.findElement(By.id("importData")) ;
 
         fileInput.sendKeys(urlFileTest) ;

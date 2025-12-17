@@ -25,7 +25,7 @@ public class ImportationDataForSallesTest extends BaseTest {
 
         linkNavigateToPageGenerateEmplois.click();
 
-        var urlFileTest = "/home/enigma/projects/Timetable-Generator/datatest/AvancementProgramme.xlsx";
+        var urlFileTest =  getFilePathForTestFiles("AvancementProgramme.xlsx");
 
         try {
             Thread.sleep(1000);
@@ -55,7 +55,7 @@ public class ImportationDataForSallesTest extends BaseTest {
         WebElement linkNavigateToPageGenerateEmplois = await(By.xpath("//a[@href='/administrateur/salles']"));
         linkNavigateToPageGenerateEmplois.click();
 
-        String urlFileTest = "/home/enigma/projects/Timetable-Generator/datatest/formateurs_avec_des_salle.xlsx";
+        String urlFileTest = getFilePathForTestFiles("formateurs_avec_des_salle.xlsx");
 
         WebElement fileInput =  driver.findElement(By.id("file")) ;
 
