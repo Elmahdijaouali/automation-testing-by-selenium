@@ -42,6 +42,14 @@
             <version>6.1.0-M1</version>
             <scope>test</scope>
         </dependency>
+        <!-- This Engine is REQUIRED to actually run the suite -->
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite-engine</artifactId>
+            <version>1.10.2</version> <!-- Match your other junit version 5.10.2 -->
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
@@ -58,15 +66,8 @@
                 <version>3.2.5</version>
 
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.5</version>
-                <configuration>
-                    <parallel>none</parallel>
-                    <forkCount>1</forkCount>
-                </configuration>
-            </plugin>
+
+
         </plugins>
     </build>
 

@@ -33,6 +33,6 @@ import parameters.ReinitialisationLesDonneesTest;
 })
 
 
-public class PrimaryTestSuite {
+public class PrimaryTestSuiteTest {
 
 }
