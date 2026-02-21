@@ -48,8 +48,11 @@ pom.xml # Maven project configuration
 ---
 
 ## Running Tests Locally
-
-1. Clone the repository:
+1. Clone this repository :
+   `````
+   https://github.com/Elmahdijaouali/Timetable-Generator-ISTA
+   
+2. Clone the repository:
    ````
    git clone https://github.com/Elmahdijaouali/automation-testing-by-selenium.git
    cd automation-testing-by-selenium
